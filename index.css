@@ -1,0 +1,82 @@
+.content {
+    display:none;
+}
+
+.preload {
+    height: 100%;
+    width:5px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    overflow-x: hidden;
+    background:black;
+    text-align:center;
+    z-index:999;
+}
+
+ .counter, .percent{
+   font-size: 90px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight:800;
+   position: relative;
+   top: 43%;
+   color: white;
+ }
+
+
+ .MainSection {
+    height: 100vh;
+    overflow: hidden;
+ }
+
+ .myVideo {
+     width: 100%;
+ }
+
+ .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    color: white;
+    font-size: 70px;
+   
+ }
+
+ .type {
+  
+    font-size: 70px;
+
+ }
+
+ .SecondSection {
+    height: 100vh;
+    background: grey;
+    text-align: center;
+ }
+
+ .menu {
+     position: fixed;
+     width: 50px;
+     height: 100vh;
+     z-index: 999999;
+     text-align: center;
+     top: 15%;
+ }
+
+ .menuItem {
+    height: 150px;
+    padding: 5px;
+
+ }
+
+ .menuText {
+    color: white;
+    display: block;
+    transform: rotate(-90deg) translate(-70px, 12px);
+    -webkit-transform: rotate(-90deg) translate(-70px, 12px);
+    white-space: nowrap;
+    line-height: 0px;
+
+ }
