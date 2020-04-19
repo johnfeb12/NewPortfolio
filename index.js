@@ -11,6 +11,15 @@ $(function() {
         }
     });
 
+    
+$(document).ready(function(){
+    $('.skillbar').each(function(){
+        $(this).find('.skillbar-bar').animate({
+            width:$(this).attr('data-percent')
+        },6000);
+    });
+});
+
     $(function(){
         $(".typed").typed({
             strings: ["Software Developer.", "Software Designer.", "Front End Developer"],
@@ -52,8 +61,6 @@ $(function() {
         $(".content").fadeIn(1000);        
     });
 });
-
-
 
 
 
