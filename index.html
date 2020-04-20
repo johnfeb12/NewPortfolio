@@ -16,7 +16,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Carter+One&family=Manrope:wght@200&family=Rakkas&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&display=swap"
       rel="stylesheet"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -43,16 +43,22 @@
       <div class="menu">
         <div class="menuCon">
           <div class="menuItem">
-            <a href="#Home"><span class="menuText">Home</span></a>
+            <a href="#Home"
+              ><span class="menuText"><h6>Home</h6></span></a
+            >
           </div>
           <div class="menuItem">
-            <a href="#SectionTwo"><span class="menuText">About Me</span></a>
+            <a href="#SectionTwo"
+              ><span class="menuText"><h6>About Me</h6></span></a
+            >
           </div>
           <div class="menuItem">
-            <a href="#Section3"><span class="menuText">Portfolio</span></a>
+            <a href="#Section3"
+              ><span class="menuText"><h6>Portfolio</h6></span></a
+            >
           </div>
           <div class="menuItem">
-            <span class="menuText">Contact Me</span>
+            <span class="menuText"><h6>Contact Me</h6></span>
           </div>
         </div>
       </div>
@@ -66,7 +72,11 @@
         </video>
       </div>
 
-      <div class="SecondSection" id="SectionTwo" style="border-bottom: 3px solid aqua;">
+      <div
+        class="SecondSection"
+        id="SectionTwo"
+        style="border-bottom: 3px solid aqua;"
+      >
         <div class="AboutMeHeader">About Me</div>
         <hr class="accessory" />
         <div class="container">
@@ -206,15 +216,169 @@
             </div>
           </div>
         </div>
-        
-    </div>
-
-          <div class="Section3" id="Section3">
-            <div class="AboutMeHeader">Portfolio</div>
-            <hr class="accessory" />
-         
-
-
       </div>
+
+      <div class="Section3" id="Section3">
+        <div class="AboutMeHeader">Portfolio</div>
+        <hr class="accessory" />
+        <div class="container" style="text-align: center;">
+          <div class="tab" style="margin-bottom: 45px;">
+            <button
+              class="tablinks btn btn-info"
+              onclick="openSection(event, 'Section1')"
+            >
+              Development Projects
+            </button>
+            <button
+              class="tablinks btn btn-info"
+              onclick="openSection(event, 'Section2')"
+            >
+              Design Projects
+            </button>
+          </div>
+
+          <div id="Section1" class="tabcontent">
+            <div class="container" style="margin-bottom: 45px;">
+              <div class="row">
+                <div class="col-sm">
+                  <div class="card">
+                    <input
+                      type="checkbox"
+                      id="card1"
+                      class="more"
+                      aria-hidden="true"
+                    />
+                    <div class="content">
+                      <div
+                        class="front"
+                        style="
+                          background-image: url('https://images.unsplash.com/photo-1529408686214-b48b8532f72c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=986e2dee5c1b488d877ad7ba1afaf2ec&auto=format&fit=crop&w=1350&q=80');
+                        "
+                      >
+                        <div class="inner">
+                          <h2>Cozy apartment</h2>
+                          <label for="card1" class="button" aria-hidden="true">
+                            Details
+                          </label>
+                        </div>
+                      </div>
+                      <div class="back">
+                        <div style="height:280px;">
+                          <div>Title</div>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis sint nostrum nihil beatae. Distinctio, quo suscipit ratione aperiam atque nihil laborum, eveniet illum debitis quis, nisi hic delectus excepturi est.
+                        </div>
+                        <label
+                          for="card1"
+                          class="button return"
+                          aria-hidden="true">
+                          <i>Back</i>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm"></div>
+              <div class="col-sm"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="Section2" class="tabcontent">
+          <div class="container" style="margin-bottom: 45px;">
+            <div class="row">
+              <div class="col-sm">
+                <div class="card">
+                  <input
+                    type="checkbox"
+                    id="card2"
+                    class="more"
+                    aria-hidden="true"
+                  />
+                  <div class="content">
+                    <div
+                      class="front"
+                      style="
+                        background-image: url('Magazine.PNG');
+                      "
+                    >
+                      <div class="inner">
+                        <h2>Travel Magazine</h2>
+                        <label for="card2" class="button" aria-hidden="true">
+                          Travel Magazine
+                        </label>
+                      </div>
+                    </div>
+                    <div class="back">
+                      <div style="height:280px;">
+                        <div>Travel Magazine</div>
+                        This project was to create a magazine of our choosing and I chose to make a Travel Magazine. <br>
+                        The tools I used for this project were:
+                        <ul>
+                          <li>Indesign</li>
+                          <li>PhotoShop</li>
+                        </ul>
+                      </div>
+                      <label
+                        for="card2"
+                        class="button return"
+                        aria-hidden="true">
+                        <i>Back</i>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm">
+                <div class="card">
+                  <input
+                    type="checkbox"
+                    id="card3"
+                    class="more"
+                    aria-hidden="true"
+                  />
+                  <div class="content">
+                    <div
+                      class="front"
+                      style="
+                        background-image: url('CastleCover.PNG');
+                      "
+                    >
+                      <div class="inner">
+                        <h2>Castle History</h2>
+                        <label for="card3" class="button" aria-hidden="true">
+                          Castle History
+                        </label>
+                      </div>
+                    </div>
+                    <div class="back">
+                      <div style="height:280px;">
+                        <div>Castle History</div>
+                        This project was to create a book cover for the History of Castles. <br>
+                        The tools I used for this project were:
+                        <ul>
+                          <li>Indesign</li>
+                          <li>PhotoShop</li>
+                          <li>Illustrator</li>
+                        </ul>
+                      </div>
+                      <label
+                        for="card3"
+                        class="button return"
+                        aria-hidden="true">
+                        <i>Back</i>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm">
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
